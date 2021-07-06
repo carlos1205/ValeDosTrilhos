@@ -2,7 +2,7 @@
     <section id="Eixos">
         <b-container>
             <h2 class="display-3 text-secondary">{{title}}</h2>
-            <div :id="title" class="accordion" role="tablist">
+            <div :id="`accordion-${title}`" class="accordion" role="tablist">
                 <b-card 
                     class="mb-1"
                     no-body
@@ -19,7 +19,7 @@
                     </b-card-header>
                     <b-collapse
                         :id="`accordion-${title}-${index}`"
-                        accordion="`accordion-${title}-${item.name}`"
+                        accordion="`accordion-${item.name}`"
                         role="tabpanel"
                     >
                         <b-card-body>
