@@ -7,8 +7,8 @@
 </template>
 
 <script>
-    import imgs from '../../assets/img/estacaoDaSaudade.jpg';
-    import logo from '../../assets/img/logo-negativa-hor-pos.png';
+    import imgs from '../../assets/img/bg_vale-dos-trilhos.png';
+    import logo from '../../assets/img/logo_vale-dos-trilhos.svg';
 
     export default {
         data: function() {
@@ -17,9 +17,8 @@
                 logo: logo,
                 banner: {
                     backgroundImage: `url(${imgs})`,
-                    backgroundPosition: 'bottom',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover'
+                    backgroundPosition: 'top',
+                    backgroundRepeat: 'no-repeat'
                 },
                 center: {
                     height: '100%'
@@ -36,6 +35,6 @@
         max-height: 100%;
     }
     #Banner .logo{
-        width: 40rem;
+        width: 35rem;
     }
 </style>

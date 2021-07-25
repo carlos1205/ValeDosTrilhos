@@ -1,6 +1,6 @@
 <template>
     <header>
-        <b-navbar toggleable="lg" type="dark" variant="success">
+        <b-navbar toggleable="lg" type="dark" variant="dark">
             <b-container fluid>
                 <b-navbar-brand href="#">{{name}}</b-navbar-brand>
 

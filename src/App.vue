@@ -10,12 +10,14 @@
   import Main from './views/Main';
   import Footer from './components/Footer';
   import Header from './components/Header';
+  import {Fragment} from 'vue-fragment';
 
   export default{
     components: {
       Main,
       Footer,
-      Header
+      Header,
+      Fragment
     }
   }
 </script>
