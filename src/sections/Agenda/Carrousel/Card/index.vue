@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <Fragment>
         <b-card
             no-body
-            style="max-width: 20rem;"
-            img-src="https://placekitten.com/380/200"
+            style="max-width: 18rem;"
+            :img-src="event.image"
             img-alt="Image"
             img-top
         >
@@ -12,16 +12,16 @@
                     <b-col cols="3">
                         <p class="text-light fs-6 date">
                             <span>
-                                09
+                                {{event.date.day}}
                             </span>
                             <span>
-                                JUL
+                                {{event.date.month}}                                
                             </span>
                         </p>
                     </b-col>
                     <b-col cols="9">
                         <h3 class="fs-5">
-                            Semana Empreendedora
+                            {{event.name}}
                         </h3>
                     </b-col>
                 </b-row>
@@ -31,8 +31,24 @@
                 <b-button href="#" variant="outline-secondary" >Ver Mais</b-button>
             </b-card-footer>
         </b-card>
-    </div>
+    </Fragment>
 </template>
+
+<script>
+    import {Fragment} from 'vue-fragment';
+    
+    export default {
+        components: { Fragment},
+        props: {
+            event: Object
+        },
+        data: function(){
+            return({
+                currentEvent: this.event
+            });
+        }
+    }
+</script>
 
 <style scoped>
     span {

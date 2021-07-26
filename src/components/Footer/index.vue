@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>{{copy}}</p>
+        <p class="text-light">{{copy}}</p>
     </footer>
 </template>
 
@@ -13,3 +13,14 @@
         }
     }
 </script>
+
+<style scoped>
+    footer {
+        margin-top: 3rem;
+        background-color: #212529;
+    }
+    footer p {
+        margin-bottom: 0;
+        text-align: center;
+    }
+</style>

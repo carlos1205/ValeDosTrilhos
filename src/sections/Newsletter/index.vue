@@ -1,17 +1,50 @@
 <template>
-    <section id="Newsletter">
-        <h2>{{title}}</h2>  
-        <p>{{description}}</p>
-    </section>
+    <b-container id="Newsletter">
+        <b-row align-h="between"> 
+            <b-col cols="6">
+                <p class="display-6">
+                    {{description}}
+                </p>
+            </b-col>
+            <b-col cols="5">
+                <b-form >
+                    <b-form-group
+                        id="newsletterName"
+                        label="Nome:"
+                        label-for="nameForNewsletter"
+                    >
+                        <b-form-input id="nameForNewsletter" required placeholder="Seu Nome"></b-form-input>
+                    </b-form-group>
+
+                    <b-form-group
+                        id="newsletterEmail"
+                        label="Email:"
+                        label-for="emailForNewsletter"
+                    >
+                        <b-form-input id="emailForNewsletter" required placeholder="Digite seu melhor email"></b-form-input>
+                    </b-form-group>
+                    <b-button pill type="submit" variant="outline-success">Submit</b-button>
+                </b-form>
+            </b-col>
+        </b-row>
+    </b-container>
 </template>
 
 <script>
     export default {
         data: function() {
             return ({
-                title: 'Newsletter',
-                description: 'Quer ficar por dentro da nossa newsletter'
+                description: 'Quer ficar por dentro da nossa newsletter?'
             });
         }
     };
 </script>
+
+<style scoped>
+    #Newsletter .form-group{
+        margin-bottom: .7rem;
+    }
+    #Newsletter button{
+        width: 100%;
+    }
+</style>
