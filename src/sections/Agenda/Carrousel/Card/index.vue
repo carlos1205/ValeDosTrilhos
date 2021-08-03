@@ -10,7 +10,7 @@
             <b-card-body>
                 <b-row>
                     <b-col cols="3">
-                        <p class="text-light fs-6 date">
+                        <p class="text-dark fs-6 date">
                             <span>
                                 {{event.date.day}}
                             </span>
@@ -35,6 +35,7 @@
 </template>
 
 <script>
+
     import {Fragment} from 'vue-fragment';
     
     export default {

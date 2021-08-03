@@ -10,7 +10,7 @@
         <b-card-body>
             <b-row>
                 <b-col>
-                    <h3 class="text-secondary">
+                    <h3 class="text-dark">
                         {{event.name}}
                     </h3>
                 </b-col>

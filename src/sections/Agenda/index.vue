@@ -1,7 +1,7 @@
 <template>
     <section id="Agenda">
         <b-container>
-            <h2 class="display-3 text-light">{{title}}</h2>
+            <h2 class="display-3 text-secondary">{{title}}</h2>
             
             <b-row align-h="center">
                 <b-col cols="11">
@@ -9,7 +9,7 @@
                 </b-col>
             </b-row>
             <b-row>
-                <p class="text-light" v-for="(paragraph, index) in apresentacao" :key="index">
+                <p class="text-dark" v-for="(paragraph, index) in apresentacao" :key="index">
                    {{paragraph.text}}
                    <a :href="paragraph.href">{{paragraph.link}}</a>
                 </p>
@@ -19,6 +19,7 @@
 </template>
 
 <script>
+
 import Carrousel from './Carrousel';
 export default {
     components: {Carrousel},
