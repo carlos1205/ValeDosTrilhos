@@ -36,5 +36,6 @@
     }
     #Banner .logo{
         width: 35rem;
+        padding-bottom: 20vh;
     }
 </style>

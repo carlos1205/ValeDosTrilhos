@@ -73,6 +73,7 @@
     #Eixos {
         margin-top: 4rem;
         margin-bottom: 2rem;
+        
     }
     #Eixos h2{
         margin-bottom: 2rem;

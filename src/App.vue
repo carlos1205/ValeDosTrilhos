@@ -25,6 +25,7 @@
 <style>
   * {
     font-family: 'Open Sans', sans-serif;
+    text-align:justify;
   } 
   p {
     font-size: 1.3rem;
