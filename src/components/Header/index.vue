@@ -1,14 +1,15 @@
 <template>
     <header>
-        <b-navbar toggleable="lg" type="dark" variant="dark">
+        <b-navbar  class="fixed-top" toggleable="lg" type="dark" variant="dark">
             <b-container fluid>
-                <b-navbar-brand href="#">{{name}}</b-navbar-brand>
-
+                <a href="#">
+                    <img :src="logoHorizontal" class="icon-bar" />
+                </a>
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 
                 <b-collapse id="nav-collapse" class="justify-content-end" is-nav>
 
-                    <b-navbar-nav class="ml-auto">
+                    <b-navbar-nav class="ml-auto justify-content-between">
                         <b-nav-item v-for="(item, index) in sections" :key="index" v-bind:href="'#'+item.id" right>
                             {{item.name}}
                         </b-nav-item>
@@ -21,10 +22,12 @@
 </template>
 
 <script>
+    import logoHorizontal from '../../assets/img/Logo_Vale-dos-Trilhos_vert_pos.png'
+
     export default {
         data: function () {
             return ({
-                name: 'Vale dos Trilhos',
+                logoHorizontal: logoHorizontal,
                 sections: [{
                     name: 'Contexto Inicial',
                     id: 'Context'
@@ -61,5 +64,9 @@
 <style scoped>
     .navbar-dark .navbar-nav .nav-link{
         color: white;
+        
+    }
+    .icon-bar{
+        width:2rem;
     }
 </style>

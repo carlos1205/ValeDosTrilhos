@@ -1,7 +1,7 @@
 <template>
     <section id="Context">
         <b-container>
-            <h2 class="display-3 text-secondary">{{title}}</h2>
+            <h2 class="display-3 text-secondary text-center">{{title}}</h2>
             <b-row class="justify-content-center">
                 <p v-for="(paragraph, index) in text" :key="index">
                     {{paragraph}}
@@ -37,9 +37,12 @@
     }
     #Context h2::after{
         content: '';
+        
         display: block;
         border: 2px solid #6c757d;
-        width: 25rem;
+        width: 40%;
+        margin: 0 auto;
         margin-top: 1%;
+        justify-content: center;
     }
 </style>

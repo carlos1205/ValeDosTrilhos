@@ -4,13 +4,13 @@
             <h2 class="display-3 text-secondary">
                 {{title}}
             </h2>
-            <b-row class="justify-content-center">
+            <b-row class="justify-content-center" >
                 <b-col>
                     <p v-for="(paragraph, index) in description" :key="index">
                         {{paragraph}}
                     </p>
                 </b-col>
-                <b-col>
+                <b-col sm="6">
                     <Accordion 
                         :initList="valores"
                     />
@@ -75,7 +75,7 @@
         content: '';
         display: block;
         border: 2px solid #6c757d;
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         margin-top: 1%;
     }

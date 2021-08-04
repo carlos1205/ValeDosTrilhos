@@ -1,7 +1,7 @@
 <template>
     <section id="Eixos">
         <b-container>
-            <h2 class="display-3 text-secondary">{{title}}</h2>
+            <h2 class="display-3 text-secondary text-center">{{title}}</h2>
             <Accordion :initList="itens" :title="title"/>
         </b-container>
     </section>
@@ -73,7 +73,6 @@
     #Eixos {
         margin-top: 4rem;
         margin-bottom: 2rem;
-        
     }
     #Eixos h2{
         margin-bottom: 2rem;
@@ -82,7 +81,9 @@
         content: '';
         display: block;
         border: 2px solid #6c757d;
-        width: 8rem;
+        width: 15%;
+        margin: 0 auto;
         margin-top: 1%;
     }
+    
 </style>

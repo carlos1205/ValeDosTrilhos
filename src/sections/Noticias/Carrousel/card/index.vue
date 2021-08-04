@@ -39,13 +39,16 @@
     }
     .card { 
         background-color: rgba(255, 255, 255, .5);
+        
     }
     .card h3 {
         text-align: left;
         font-size: 1.2rem;
         text-decoration: none;
+       
     }
     .card.new:hover{
         background-color: rgba(0, 0, 0, .2);
     }
+    
 </style>

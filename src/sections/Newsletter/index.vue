@@ -21,7 +21,7 @@
                         label="Email:"
                         label-for="emailForNewsletter"
                     >
-                        <b-form-input id="emailForNewsletter" required placeholder="Digite seu melhor email"></b-form-input>
+                        <b-form-input id="emailForNewsletter" required placeholder="Digite seu email"></b-form-input>
                     </b-form-group>
                     <b-button pill type="submit" variant="outline-success">Submit</b-button>
                 </b-form>
@@ -46,5 +46,16 @@
     }
     #Newsletter button{
         width: 100%;
+    }
+    @media(max-width: 479px){
+        ::-webkit-input-placeholder {
+            font-size:0.6rem;
+        }
+       #Newsletter{
+           font-size:0.8rem;
+       }
+       p{
+           font-size:1.4rem;
+       }
     }
 </style>

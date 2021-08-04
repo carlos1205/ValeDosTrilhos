@@ -1,7 +1,7 @@
 <template>
     <section id="Agenda">
         <b-container>
-            <h2 class="display-3 text-secondary">{{title}}</h2>
+            <h2 class="display-3 text-secondary text-center">{{title}}</h2>
             
             <b-row align-h="center">
                 <b-col cols="11">
@@ -9,9 +9,9 @@
                 </b-col>
             </b-row>
             <b-row>
-                <p class="text-dark" v-for="(paragraph, index) in apresentacao" :key="index">
+                <p class="text-dark " v-for="(paragraph, index) in apresentacao" :key="index">
                    {{paragraph.text}}
-                   <a :href="paragraph.href">{{paragraph.link}}</a>
+                   <a class="btn btn-primary" :href="paragraph.href">{{paragraph.link}}</a>
                 </p>
             </b-row>
         </b-container>
@@ -53,10 +53,13 @@ export default {
         content: '';
         display: block;
         border: 2px solid #f8f9fa;
-        width: 30rem;
+
+        width: 50%;
+        margin: 0 auto;
         margin-top: 1%;
     }
     #Agenda p {
         text-align: center;
     }
+    
 </style>
