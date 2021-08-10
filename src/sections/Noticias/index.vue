@@ -1,10 +1,11 @@
 <template>
-    <b-container id="Noticias" fluid>
+    <b-container id="Noticias" fluid >
         <h2 class="text-secondary display-3">{{title}}</h2>
-        <b-row >
-            <Carrousel />
+        <b-row class="p-4">
+                <Carrousel  />
         </b-row>
     </b-container>
+    
 </template>
 
 <script>

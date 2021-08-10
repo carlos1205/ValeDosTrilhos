@@ -45,8 +45,9 @@
 <style scoped>
     
     #Chancela {
-        margin-top: 7rem;
-        margin-bottom: 4rem;
+        margin-top: 6rem;
+        padding-top: 4rem;
+        margin-bottom: 8rem;
     }
 
     #Chancela img {

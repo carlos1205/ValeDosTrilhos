@@ -68,5 +68,6 @@
     }
     .icon-bar{
         width:2rem;
+        
     }
 </style>

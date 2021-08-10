@@ -1,5 +1,5 @@
 <template>
-    <carousel :responsive="responsive" :nav="false">
+    <carousel :responsive="responsive" :nav="false" >
         <Card v-for="(event, index) in events" :key="index" :event="event"/>
     </carousel>
 </template>
@@ -7,7 +7,8 @@
 <script>
     import Card from './Card';
     import carousel from 'vue-owl-carousel';
-
+    import evento1 from '../../../assets/img/banner-evento1.jpg';
+    import evento2 from '../../../assets/img/banner-evento2.jpg';
     export default {
         components: {
             Card,
@@ -21,50 +22,28 @@
                         nav: false
                     },
                     600: {
-                        items: 3,
+                        items: 2,
                         nav: false
                     }
                 },
                 events: [
                     {
                         date: {
-                            day: '09',
-                            month: 'JUL'
+                            day: '18',
+                            month: 'AGO'
                         },
-                        image: 'https://placekitten.com/380/200',
-                        name: 'Semana Empreendedora'
+                        image: evento1,
+                        name: 'Como Design Sprint pode auxiliar o seu negócio',
+                        link: 'https://www.sympla.com.br/como-design-sprint-pode-auxiliar-o-seu-negocio__1291049'
                     },
                     {
                         date: {
-                            day: '09',
-                            month: 'JUL'
+                            day: '25',
+                            month: 'AGO'
                         },
-                        image: 'https://placekitten.com/380/200',
-                        name: 'Semana Empreendedora'
-                    },
-                    {
-                        date: {
-                            day: '09',
-                            month: 'JUL'
-                        },
-                        image: 'https://placekitten.com/380/200',
-                        name: 'Semana Empreendedora'
-                    },
-                    {
-                        date: {
-                            day: '09',
-                            month: 'JUL'
-                        },
-                        image: 'https://placekitten.com/380/200',
-                        name: 'Semana Empreendedora'
-                    },
-                    {
-                        date: {
-                            day: '09',
-                            month: 'JUL'
-                        },
-                        image: 'https://placekitten.com/380/200',
-                        name: 'Semana Empreendedora'
+                        image: evento2,
+                        name: 'Como Scrum pode auxiliar o seu negócio',
+                        link:'https://www.sympla.com.br/como-scrum-pode-auxiliar-o-seu-negocio__1291058'
                     },
                 ]
             });

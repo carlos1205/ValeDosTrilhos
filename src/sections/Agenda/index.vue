@@ -3,8 +3,8 @@
         <b-container>
             <h2 class="display-3 text-secondary text-center">{{title}}</h2>
             
-            <b-row align-h="center">
-                <b-col cols="11">
+            <b-row align-h="center" >
+                <b-col cols="6">
                     <Carrousel />
                 </b-col>
             </b-row>
@@ -40,19 +40,19 @@ export default {
 
 <style scoped>
     #Agenda {
-        background-color: #bfd730;
+        background-color: white;
         margin-top: 4rem;
-        padding-top: 3rem;
-        padding-bottom: 7rem;
+        padding-top: 2rem;
+        padding-bottom: 8rem;
         margin-bottom: 2rem;
     }
     #Agenda h2{
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
     #Agenda h2::after{
         content: '';
         display: block;
-        border: 2px solid #f8f9fa;
+        border: 2px solid #6c757d;
 
         width: 50%;
         margin: 0 auto;
@@ -60,6 +60,7 @@ export default {
     }
     #Agenda p {
         text-align: center;
+        margin-top: 2rem;
     }
     
 </style>

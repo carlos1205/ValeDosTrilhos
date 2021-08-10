@@ -94,9 +94,5 @@
         background-color: var(--color-hover);
         border-color: var(--color-hover);
     }
-   @media(max-width: 479px){
-       button{
-           font-size:0.8rem;
-       }
-   }
+  
    </style>

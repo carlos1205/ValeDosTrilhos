@@ -25,6 +25,9 @@
                     </b-form-group>
                     <b-button pill type="submit" variant="outline-success">Submit</b-button>
                 </b-form>
+                <video width="400" preload="metadata">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4#t=8" type="video/mp4">
+                </video>
             </b-col>
         </b-row>
     </b-container>
@@ -34,7 +37,7 @@
     export default {
         data: function() {
             return ({
-                description: 'Quer ficar por dentro da nossa newsletter?'
+                description: 'Quer ficar por dentro da nossa Newsletter?'
             });
         }
     };
