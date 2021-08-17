@@ -7,8 +7,6 @@
     <Chancela />
     <Agenda />
     <Mapa />
-    <Noticias />
-    <Newsletter />
   </main>
 </template>
 
@@ -20,8 +18,6 @@
   import Chancela from './../../sections/Chancela';
   import Agenda from './../../sections/Agenda';
   import Mapa from './../../sections/Mapa';
-  import Noticias from './../../sections/Noticias';
-  import Newsletter from './../../sections/Newsletter';
 
   export default {
     components: {
@@ -31,9 +27,7 @@
       Eixos,
       Chancela,
       Agenda,
-      Mapa,
-      Noticias,
-      Newsletter
+      Mapa
     }
   }
 </script>

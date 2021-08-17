@@ -25,8 +25,16 @@
 <style>
   * {
     font-family: 'Open Sans', sans-serif;
+    text-align:justify;
+    scroll-padding:4rem;
   } 
   p {
     font-size: 1.3rem;
   }
+   @media(max-width: 479px){
+       *{
+           font-size:0.8rem;
+       }
+   }
+  
 </style>

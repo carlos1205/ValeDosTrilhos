@@ -74,7 +74,7 @@
         transition: linear .5s;
         font-size: 1.25rem;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
     }
     button label{
         text-align: right;
@@ -94,4 +94,5 @@
         background-color: var(--color-hover);
         border-color: var(--color-hover);
     }
-</style>
+  
+   </style>

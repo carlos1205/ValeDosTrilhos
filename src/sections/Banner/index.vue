@@ -7,7 +7,7 @@
 </template>
 
 <script>
-    import imgs from '../../assets/img/bg_vale-dos-trilhos.png';
+    import imgs from '../../assets/img/bg_vale-dos-trilhos_BIG_PB.jpg';
     import logo from '../../assets/img/logo_vale-dos-trilhos.svg';
 
     export default {
@@ -36,5 +36,6 @@
     }
     #Banner .logo{
         width: 35rem;
+        padding-bottom: 20vh;
     }
 </style>

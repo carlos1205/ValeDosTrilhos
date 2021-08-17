@@ -43,9 +43,11 @@
 </script>
 
 <style scoped>
+    
     #Chancela {
-        margin-top: 7rem;
-        margin-bottom: 4rem;
+        margin-top: 6rem;
+        padding-top: 4rem;
+        margin-bottom: 6rem;
     }
 
     #Chancela img {
@@ -58,7 +60,8 @@
         content: '';
         display: block;
         border: 2px solid #6c757d;
-        width: 15rem;
+        width: 40%;
+        
         margin-top: 1%;
     }
     #Chancela a{
@@ -68,4 +71,5 @@
         font-weight: bolder;
         cursor: pointer
     }
+
 </style>

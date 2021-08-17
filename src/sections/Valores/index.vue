@@ -4,13 +4,13 @@
             <h2 class="display-3 text-secondary">
                 {{title}}
             </h2>
-            <b-row class="justify-content-center">
+            <b-row class="justify-content-center" >
                 <b-col>
                     <p v-for="(paragraph, index) in description" :key="index">
                         {{paragraph}}
                     </p>
                 </b-col>
-                <b-col>
+                <b-col sm="6">
                     <Accordion 
                         :initList="valores"
                     />
@@ -29,8 +29,8 @@
             return ({
                 title: 'O que é o Vale dos Trilhos?',
                 description: [
-                    'Em Ponta Grossa, cidade de oportunidades, o que nos conecta com o futuro é o Vale do Trilhos nosso ecossistema de inovação para construir uma cidade inteligente com essência criativa e inovadora.',
-                    'Nosso  ecossistema de inovação para construir uma cidade inteligente com essência criativa e inovadora.'
+                    '"Em Ponta Grossa, cidade de oportunidades, o que nos conecta com o futuro é o Vale do Trilhos, nosso ecossistema de inovação para construir uma cidade inteligente com essência criativa e inovadora."',
+                    'O Vale dos Trilhos é a governança do ecossistema de inovação de Ponta Grossa, formado pelos atores que unem e integram esforços na criação de um ambiente propício à inovação, para que assim possamos construir uma cidade inteligente em prol do desenvolvimento sustentável.'
                 ],
                 valores: [
                     {
@@ -75,7 +75,7 @@
         content: '';
         display: block;
         border: 2px solid #6c757d;
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         margin-top: 1%;
     }

@@ -48,14 +48,12 @@
 
 <script>
     const getButtonsColor = (size) => {
-        var R = 191, G = 215, B = 48;
+        var R = 247, G = 8, B = 137;
         const colors = [];
         for(let i = 0; i < size; i++){
             //RGB
             colors.unshift(`${R}, ${G}, ${B}`);
-            R -= 30;
-            G -= 20;
-            B -= 7;
+            
         }
 
         return colors;
