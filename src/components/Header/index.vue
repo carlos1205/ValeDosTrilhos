@@ -22,7 +22,7 @@
 </template>
 
 <script>
-    import logoHorizontal from '../../assets/img/Logo_Vale-dos-Trilhos_vert_pos.png'
+    import logoHorizontal from '../../assets/img/icon-home-logo-vale.png'
 
     export default {
         data: function () {
@@ -51,10 +51,6 @@
                 {
                     name: 'Mapa de inovação',
                     id: 'Mapa'
-                },
-                {
-                    name: 'Noticias',
-                    id: 'Noticias'
                 }]
             });
         }

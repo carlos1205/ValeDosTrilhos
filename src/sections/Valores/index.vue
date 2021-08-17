@@ -29,8 +29,8 @@
             return ({
                 title: 'O que é o Vale dos Trilhos?',
                 description: [
-                    'Em Ponta Grossa, cidade de oportunidades, o que nos conecta com o futuro é o Vale do Trilhos nosso ecossistema de inovação para construir uma cidade inteligente com essência criativa e inovadora.',
-                    'Nosso  ecossistema de inovação para construir uma cidade inteligente com essência criativa e inovadora.'
+                    '"Em Ponta Grossa, cidade de oportunidades, o que nos conecta com o futuro é o Vale do Trilhos, nosso ecossistema de inovação para construir uma cidade inteligente com essência criativa e inovadora."',
+                    'O Vale dos Trilhos é a governança do ecossistema de inovação de Ponta Grossa, formado pelos atores que unem e integram esforços na criação de um ambiente propício à inovação, para que assim possamos construir uma cidade inteligente em prol do desenvolvimento sustentável.'
                 ],
                 valores: [
                     {

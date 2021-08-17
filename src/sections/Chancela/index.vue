@@ -47,7 +47,7 @@
     #Chancela {
         margin-top: 6rem;
         padding-top: 4rem;
-        margin-bottom: 8rem;
+        margin-bottom: 6rem;
     }
 
     #Chancela img {

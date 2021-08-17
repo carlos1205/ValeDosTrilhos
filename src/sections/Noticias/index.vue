@@ -1,9 +1,11 @@
 <template>
     <b-container id="Noticias" fluid >
         <h2 class="text-secondary display-3">{{title}}</h2>
-        <b-row class="p-4">
-                <Carrousel  />
-        </b-row>
+        <b-row align-h="center" >
+                <b-col cols="9">
+                    <Carrousel />
+                </b-col>
+            </b-row>
     </b-container>
     
 </template>

@@ -8,8 +8,7 @@
         <b-row align-h="center">
             <b-col class="mapaTitle" cols="10">
                 <b-row align-h="between">
-                    <h2 class="text-light col-9">{{title}}</h2>
-                    <a class="col-3 btn btn-outline-light" :href="linkCadastro">{{labelCadastro}}</a>
+                    <a class="col-3 btn btn-outline-light" :href="linkCadastro" target="_blank">{{labelCadastro}}</a>
                 </b-row>
             </b-col>
         </b-row>
@@ -20,11 +19,11 @@
     export default {
         data: function(){
             return ({
-                title: 'Mapa de Inovação',
                 description: 'Mapa de Inovação',
-                iframe: 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28907.56780758095!2d-50.17528109417986!3d-25.08676043576863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1627255006239!5m2!1spt-BR!2sbr',
-                linkCadastro: '#',
+                iframe: 'https://www.google.com/maps/d/u/0/embed?mid=1keVxvbqhj7df8dH95oUPABweNtJQ94f9',
+                linkCadastro: 'https://docs.google.com/forms/d/e/1FAIpQLSeMpjjSRj4kNPk6UagJlvzreqEse4t7VPBeHFlHuONbeazZ6Q/viewform?usp=sf_link',
                 labelCadastro: 'Faça Parte'
+                
             });
         }
     };
